@@ -120,4 +120,15 @@ footer ul li:hover {
   background-color: #23c483;
 }
 
-
+#borde{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+  margin-left: -3px;
+  opacity: 20%;
+}
+#borde img{
+  height: 200px;
+  width: 100px;
+}
