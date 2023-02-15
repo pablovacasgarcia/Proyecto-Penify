@@ -5,15 +5,17 @@ body{
 }
 
 img {
-  margin-top: -130px;
-  margin-left: -90px;
+  margin-top: -15%;
+  margin-left: -15%;
+  width: 90%;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 15%;
+    margin-left: 10%;
+    margin-right: 5%;
     margin-top: 10%;
     padding-left: 2em;
     padding-right: 2em;
@@ -142,5 +144,10 @@ img {
   .button3:hover {
     background-color: red;
     color: white;
+  }
+
+  #registroboton {
+    margin-top: -25px;
+    margin-bottom: 10px;
   }
   

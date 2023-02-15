@@ -10,6 +10,13 @@ header {
     display: flex;
     justify-content: center;
     font-size: larger;
+    position: fixed;
+    background-color: black;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -4px;
+    width: 100%;
+    z-index: 1;
 }
 
 
@@ -22,6 +29,7 @@ header ul {
 #Logo {
     width: 100px;
     margin-top: 10px;
+    margin-left: 25%;
 }
 
 header li {
@@ -34,10 +42,18 @@ header a {
     color: white;
     margin-left: 20px;
 }
-header a:hover{
+
+li:hover .Entradas{
     text-decoration: underline;
+    color: #23c483;
 }
+
+.Entradas {
+  margin-left: 10px;
+}
+
 .Registro {
+  width: auto;
   margin-left: 20px;
   margin-top: -10px;
   padding: 1.3em 3em;
@@ -70,8 +86,14 @@ header a:hover{
   background-color: white;
   color: black;
 }
+
+#Inicio:hover {
+  color: #23c483;
+}
+
 #borde_superior{
   display: flex;
+  width:100%;
 }
 #borde{
   position: absolute;
@@ -174,4 +196,38 @@ footer ul li a p{
 
 footer ul li:hover {
   background-color: #23c483;
+}
+
+header ul ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+  padding-right: 20px;
+  font-size: 80%;
+  background-color: black;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  margin-left: -18px;
+}
+
+header nav ul li:hover > ul {
+  display: block;
+}
+
+header ul ul li {
+  float: none;
+  width: max-content;
+}
+
+header ul ul li:hover a{
+  color: #23c483;
+}
+
+header ul ul ul li:hover {
+  background-color: rgb(235, 141, 10);
+}
+
+header nav ul ul ul {
+  top: 0;
+  left: 100%;
 }
