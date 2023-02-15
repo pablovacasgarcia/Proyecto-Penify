@@ -89,10 +89,10 @@ footer ul{
 }
 footer ul li{
   background-color:gray;
-  width: 200px;
+  width: 120px;
   padding: 5px;
   border-radius: 10px;
-  height: 75px;
+  height: 90px;
 }
 footer ul li img{
   height: 30px;
@@ -114,6 +114,10 @@ footer ul li a h4{
 footer ul li a p{
   margin-top: 3px;
   font-size: 13px;
+}
+
+footer ul li:hover {
+  background-color: #23c483;
 }
 
 
