@@ -13,7 +13,7 @@ header {
 }
 
 
-ul {
+header ul {
     display: flex; 
     flex-direction: row;
     list-style: none; 
@@ -28,12 +28,18 @@ header li {
     margin-top: 25px;
 }
 
-a {
+header a {
     text-decoration: none;
     appearance: none;
+    color: white;
+    margin-left: 20px;
 }
-
+header a:hover{
+    text-decoration: underline;
+}
 .Registro {
+  margin-left: 20px;
+  margin-top: -10px;
   padding: 1.3em 3em;
   font-size: 12px;
   text-transform: uppercase;
@@ -63,6 +69,51 @@ a {
 #Inicio {
   background-color: white;
   color: black;
+}
+
+footer{
+  background-color:black;
+  height: 130px;
+  color: white;
+}
+
+footer h3{
+  margin-top: 10px;
+  margin-left: 175px;
+  color: gray;
+}
+footer ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+footer ul li{
+  background-color:gray;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  height: 75px;
+}
+footer ul li img{
+  height: 30px;
+  margin-top: 5px;
+}
+#tiktok{
+  height: 35px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+footer ul li a{
+  text-decoration: none;
+  color: white;
+}
+footer ul li a h4{
+  margin-top: -10px;
+  font-size: 13px;
+}
+footer ul li a p{
+  margin-top: 3px;
+  font-size: 13px;
 }
 
 
