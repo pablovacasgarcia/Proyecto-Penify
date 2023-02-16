@@ -52,6 +52,37 @@ li:hover .Entradas{
   margin-left: 10px;
 }
 
+header ul ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+  padding-right: 20px;
+  font-size: 80%;
+  background-color: black;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  margin-left: -18px;
+}
+
+header nav ul li:hover > ul {
+  display: block;
+}
+
+header ul ul li {
+  float: none;
+  width: max-content;
+}
+
+header ul ul li:hover a{
+  color: #23c483;
+}
+
+
+header nav ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
 .Registro {
   width: auto;
   margin-left: 20px;
@@ -93,8 +124,15 @@ li:hover .Entradas{
 
 #borde_superior{
   display: flex;
-  width:100%;
+  width:101.1%;
+  background-image: url(../img/borde_superior.png);
+  background-size: 30%;
+  background-repeat: repeat-x;
+  height: 240px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
+
 #borde{
   position: absolute;
   display: flex;
@@ -148,6 +186,34 @@ li:hover .Entradas{
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 800px) {
+  #noticia_principal {
+    width: 70%;
+  }
+
+  #noticia_principal img{
+    height: 60%;
+    width: 60%;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-left: 50px;
+  }
+
+  #noticia_principal p{
+    font-size: 80%;
+  }
+
+  #noticia_principal a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #noticia_principal h4{
+    margin-top: -30px;
+  }
+}
+
 footer{
   border-top: 2px solid grey;
   background-color:black;
@@ -198,36 +264,3 @@ footer ul li:hover {
   background-color: #23c483;
 }
 
-header ul ul {
-  display: none;
-  position: absolute;
-  padding: 0;
-  padding-right: 20px;
-  font-size: 80%;
-  background-color: black;
-  padding-bottom: 20px;
-  border-radius: 8px;
-  margin-left: -18px;
-}
-
-header nav ul li:hover > ul {
-  display: block;
-}
-
-header ul ul li {
-  float: none;
-  width: max-content;
-}
-
-header ul ul li:hover a{
-  color: #23c483;
-}
-
-header ul ul ul li:hover {
-  background-color: rgb(235, 141, 10);
-}
-
-header nav ul ul ul {
-  top: 0;
-  left: 100%;
-}
