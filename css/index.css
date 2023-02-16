@@ -70,8 +70,7 @@ header nav ul li:hover > ul {
 
 header ul ul li {
   float: none;
-  width: max-content;
-  padding-right: 20px;
+  width: 180px;
 }
 
 header ul>li>ul>li:hover>a{
@@ -84,7 +83,8 @@ header ul ul li:hover a ul{
 
 
 header nav ul ul ul {
-  top: 0;
+  position: absolute;
+  margin-top: -40px;
   left: 100%;
 }
 
