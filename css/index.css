@@ -92,6 +92,11 @@ header ul ul ul li a {
   color: white;
 }
 
+abbr {
+  text-decoration: none;
+  appearance: none;
+}
+
 .Registro {
   width: auto;
   margin-left: 20px;
@@ -257,7 +262,7 @@ footer ul li img{
   margin-top: 5px;
 }
 #tiktok{
-  height: 35px;
+  height: 30px;
   margin-top: 5px;
   margin-bottom: -5px;
 }
@@ -276,5 +281,10 @@ footer ul li a p{
 
 footer ul li:hover {
   background-color: #23c483;
+}
+
+footer ul li:hover img{
+  width: 35%;
+  height: 45%;
 }
 
