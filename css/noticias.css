@@ -1,0 +1,313 @@
+body{
+    background-color: black;
+    font-family: arial;
+    color: white;
+}
+
+header {
+    border-bottom: 2px solid grey;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    position: fixed;
+    background-color: black;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -4px;
+    width: 100%;
+    z-index: 1;
+}
+
+
+header ul {
+    display: flex; 
+    flex-direction: row;
+    list-style: none; 
+}
+
+#Logo {
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 25%;
+}
+
+header li {
+    margin-top: 25px;
+}
+
+header a {
+    text-decoration: none;
+    appearance: none;
+    color: white;
+    margin-left: 20px;
+}
+
+li:hover .Entradas{
+    text-decoration: underline;
+    color: #23c483;
+}
+
+.Entradas {
+  margin-left: 10px;
+}
+
+header ul ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+  padding-right: 0px;
+  font-size: 80%;
+  background-color: black;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  margin-left: -18px;
+}
+
+header nav ul li:hover > ul {
+  display: block;
+}
+
+header ul ul li {
+  float: none;
+  width: max-content;
+  padding-right: 20px;
+}
+
+header ul>li>ul>li:hover>a{
+  color: #23c483;
+}
+
+header ul ul li:hover a ul{
+  display: block;
+}
+
+
+header nav ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
+header ul ul ul li a {
+  color: white;
+}
+
+.Registro {
+  width: auto;
+  margin-left: 20px;
+  margin-top: -10px;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: white;
+  background-color: gray;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.Registro:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.Registro:active {
+  transform: translateY(-1px);
+}
+
+#Inicio {
+  background-color: white;
+  color: black;
+}
+
+#Inicio:hover {
+  color: #23c483;
+}
+
+main {
+  background-image: url(../img/borde_lateral.png);
+  background-position: left;
+  background-position-x: left;
+  background-repeat: repeat-y;
+  background-size: 8%;
+  margin-left: -8px;
+  height: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 50px;
+}
+.ultima_noticia{
+    display :flex;
+}
+#noticia_principal{
+  width: 550px;
+  margin-left: 150px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  height: 570px;
+}
+
+#noticia_principal img{
+  height: 300px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: -20px;
+
+}
+#noticia_principal a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+}
+
+#noticia_principal h4{
+  text-transform: uppercase;
+  padding: 30px;
+  margin-top: -15px;
+}
+#noticia_principal a:hover h4{
+  color: #23c483;
+}
+#noticia_principal p{
+  padding: 20px;
+  margin-top: -30px;
+}
+#noticia_principal p:nth-child(3){
+  color: gray;
+}
+#noticia_pricipal div{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  #noticia_principal {
+    width: 70%;
+  }
+
+  #noticia_principal img{
+    height: 60%;
+    width: 60%;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-left: 50px;
+  }
+
+  #noticia_principal p{
+    font-size: 80%;
+  }
+
+  #noticia_principal a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #noticia_principal h4{
+    margin-top: -30px;
+  }
+}
+#noticia_destacada{
+    width: 1100px;
+    margin-left: 150px;
+    border: 0.2px solid white;
+    border-radius: 5px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+  #noticia_destacada img{
+    height: 400px;
+    padding: 30px;
+  }
+  #noticia_destacada a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+  }
+  #noticia_destacada a:hover{
+     box-shadow: 0px 0px 10px 0px #23c483;
+  }
+  #noticia_destacada h4{
+    text-transform: uppercase;
+    padding: 60px;
+    margin-bottom: -40px;
+    margin-left: -40px;
+  }
+  #noticia_destacada a:hover h4{
+    color: #23c483;
+  }
+  #noticia_destacada p{
+    padding: 20px;
+  }
+  #noticia_destacada p:nth-child(3){
+    color: gray;
+  }
+  #noticia_destacada div{
+    display: flex;
+    flex-direction: column;
+  }
+footer{
+  border-top: 2px solid grey;
+  background-color:black;
+  height: 130px;
+  color: white;
+  margin-top: -1px;
+  width: 100%;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding-bottom: 3%;
+}
+
+footer h2{
+  margin-top: 10px;
+  margin-left: 115px;
+  color: gray;
+  letter-spacing: 3px;
+}
+footer ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+footer ul li{
+  background-color:gray;
+  width: 120px;
+  padding: 5px;
+  border-radius: 10px;
+  height: 90px;
+}
+footer ul li img{
+  height: 30px;
+  margin-top: 5px;
+}
+#tiktok{
+  height: 35px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+footer ul li a{
+  text-decoration: none;
+  color: white;
+}
+footer ul li a h4{
+  margin-top: -10px;
+  font-size: 13px;
+}
+footer ul li a p{
+  margin-top: 3px;
+  font-size: 13px;
+}
+
+footer ul li:hover {
+  background-color: #23c483;
+}
