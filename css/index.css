@@ -56,7 +56,7 @@ header ul ul {
   display: none;
   position: absolute;
   padding: 0;
-  padding-right: 20px;
+  padding-right: 0px;
   font-size: 80%;
   background-color: black;
   padding-bottom: 20px;
@@ -71,16 +71,25 @@ header nav ul li:hover > ul {
 header ul ul li {
   float: none;
   width: max-content;
+  padding-right: 20px;
 }
 
-header ul ul li:hover a{
+header ul>li>ul>li:hover>a{
   color: #23c483;
+}
+
+header ul ul li:hover a ul{
+  display: block;
 }
 
 
 header nav ul ul ul {
   top: 0;
   left: 100%;
+}
+
+header ul ul ul li a {
+  color: white;
 }
 
 .Registro {
