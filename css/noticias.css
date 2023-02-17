@@ -4,6 +4,7 @@ body{
     color: white;
 }
 
+
 header {
     border-bottom: 2px solid grey;
     height: 120px;
@@ -152,12 +153,13 @@ main {
 }
 #noticia_principal{
   width: 550px;
-  margin-left: 100px;
+  margin-left: 120px;
   border: 1px solid white;
   border-radius: 5px;
   margin-top: 150px;
   margin-bottom: 30px;
   height: 570px;
+  margin-right: 0%;
 }
 
 #noticia_principal img{
@@ -199,10 +201,18 @@ main {
   flex-direction: column;
 }
 
+#texto_uzuni {
+  margin-bottom: 0%;
+}
+
 @media screen and (max-width: 800px) {
   #noticia_principal {
     width: 70%;
     height: 420px;
+  }
+
+  #noticia_principal {
+    margin-left: 10%;
   }
 
   #noticia_principal img{
@@ -226,6 +236,10 @@ main {
     margin-top: -30px;
   }
 
+  #texto_uzuni {
+    margin-bottom: 6%;
+  }
+
   #noticia_destacada {
     width: 80%;
   }
@@ -235,7 +249,7 @@ main {
     width: 70%;
     padding: 20px;
     padding-bottom: 0px;
-    margin-left: 50px;
+    margin-left: 70px;
   }
 
   #noticia_destacada p{
@@ -250,7 +264,88 @@ main {
   #noticia_destacada h4{
     margin-top: -30px;
   }
+
+  #like_destacada {
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
 }
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display:block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  transition: 100ms;
+  left: 84%;
+  margin-top: -12%;
+  margin-right: 100%;
+}
+
+.checkmark {
+  top: 0;
+  left: 0;
+  height: 2em;
+  width: 2em;
+  transition: 100ms;
+  animation: dislike_effect 400ms ease;
+}
+
+.container input:checked ~ .checkmark path {
+  fill:#23c483;
+  stroke-width: 0;
+}
+
+.container input:checked ~ .checkmark {
+  animation: like_effect 400ms ease;
+}
+
+.container:hover {
+  transform: scale(1.1);
+}
+
+#like_destacada {
+  top: -7%;
+  left: 80%;
+}
+
+@keyframes like_effect {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes dislike_effect {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 #noticia_destacada{
     width: 70%;
     margin-left: 20%;
@@ -258,6 +353,7 @@ main {
     border-radius: 5px;
     margin-top: 60px;
     margin-bottom: 60px;
+    margin-right: 0;
   }
   
   #noticia_destacada img{
