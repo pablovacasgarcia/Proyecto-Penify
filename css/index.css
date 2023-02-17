@@ -138,7 +138,7 @@ abbr {
 
 #borde_superior{
   display: flex;
-  width:101.1%;
+  width:101%;
   background-image: url(../img/borde_superior.png);
   background-size: 30%;
   background-repeat: repeat-x;
