@@ -317,6 +317,10 @@ main {
   top: -7%;
   left: 80%;
 }
+#like_mini{
+  margin-top:-25%;
+  left: 80%;
+}
 
 @keyframes like_effect {
   0% {
@@ -348,7 +352,7 @@ main {
 
 #noticia_destacada{
     width: 70%;
-    margin-left: 20%;
+    margin-left: 15%;
     border: 0.2px solid white;
     border-radius: 5px;
     margin-top: 60px;
@@ -388,6 +392,62 @@ main {
     display: flex;
     flex-direction: column;
   }
+
+  .minis{
+    display :flex;
+    flex-wrap: wrap;
+}
+#mini{
+  width: 300px;
+  margin-left: 10%;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 1%;
+  margin-bottom: 30px;
+  height: 400px;
+  margin-right: 0%;
+}
+
+#mini img{
+  height: 150px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: -20px;
+
+}
+#mini a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+}
+
+#mini:hover {
+  box-shadow: 0px 0px 10px 0px #23c483;
+}
+
+#mini h4{
+  text-transform: uppercase;
+  padding: 30px;
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+#mini a:hover h4{
+  color: #23c483;
+}
+#mini p{
+  padding: 20px;
+  margin-top: -60px;
+  margin-bottom: 30px;
+}
+#mini p:nth-child(3){
+  color: gray;
+}
+#mini div{
+  display: flex;
+  flex-direction: column;
+}
 footer{
   border-top: 2px solid grey;
   background-color:black;
